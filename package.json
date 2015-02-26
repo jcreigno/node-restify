@@ -26,6 +26,7 @@
         "Andrew Sliwinski",
         "Richardo Stuven",
         "Matt Smillie",
+        "Armin Tamzarian",
         "Diego Torres",
         "Mike Williams",
         "Brian Pin",
@@ -73,7 +74,7 @@
         "verror": "^1.4.0"
     },
     "optionalDependencies": {
-        "dtrace-provider": "^0.3.1"
+        "dtrace-provider": "^0.4.0"
     },
     "devDependencies": {
         "cover": "^0.2.9",
@@ -82,6 +83,6 @@
         "watershed": "^0.3.0"
     },
     "scripts": {
-        "test": "nodeunit ./test"
+        "test": "make prepush"
     }
 }

@@ -31,6 +31,9 @@ observability into the latency and characteristics of my
 applications.  If you don't need that, or don't care about those
 aspect(s), then it's probably not for you.
 
+For real time chat, discussion and support, join the `#restify` IRC channel on
+`irc.freenode.net`.
+
 ## About this guide
 
 This guide provides comprehensive documentation on writing a REST api (server)
@@ -868,7 +871,7 @@ to something like:
     }
 
 `req.username` will also be set, and defaults to 'anonymous'.  If the scheme
-is unrecognized, the only thing avaiable in `req.authorization` will be
+is unrecognized, the only thing available in `req.authorization` will be
 `scheme` and `credentials` - it will be up to you to parse out the rest.
 
 ### CORS
@@ -1830,7 +1833,7 @@ is already used).
         });
 
         res.on('end', function() {
-          console.log(body);
+          console.log(res.body);
         });
       });
     });
